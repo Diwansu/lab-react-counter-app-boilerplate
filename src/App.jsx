@@ -18,11 +18,13 @@ export default class App extends Component{
               };
            
          Subtraction=()=>{
+          if(this.state.count>0) {
           this.setState((prevState)=> ({
             count: prevState.count - 1 
           }))
          }
-
+        }
+        
          render() {
            return (
              <div className="resultContainer">
